@@ -1,2 +1,2 @@
 # Interact
-a social a[pplication for facilitating interactions
+a social application for facilitating interactions
