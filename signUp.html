@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Interact | SignUp</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body class="bg-[#6D9AC3]">
+		<!-- App HEADING -->
+		<h1
+			class="text-center mt-[3rem] text-[white] text-[1.7rem] font-bold sm:text-[2rem]"
+		>
+			INTERACT
+		</h1>
+
+		<!-- sign up Form -->
+		<form
+			action="submit"
+			class="mt-[2rem] pb-[5rem] bg-white w-[90%] max-w-[600px] px-[30px] py-[30px] mx-auto rounded-[12px] min-h-[50vh] sm:px-[60px]"
+		>
+			<h2 class="mb-[1rem] text-[1.5rem] sm:text-[1.8rem]">SIGN UP</h2>
+			<div class="mb-[1.5rem]">
+				<label for="email" class="block mb-[5px]">Email</label>
+				<input
+					type="email"
+					id="email"
+					class="w-full border-2 border-[#D7D7D7] py-[15px] rounded-[8px]"
+				/>
+			</div>
+			<div class="mb-[1.5rem]">
+				<label for="password" class="block mb-[5px]">Password</label>
+				<input
+					type="password"
+					id="password"
+					class="w-full border-2 border-[#D7D7D7] py-[15px] rounded-[8px]"
+				/>
+			</div>
+			<div>
+				<label for="confirmPassword" class="block mb-[5px]"
+					>Confirm password</label
+				>
+				<input
+					type="password"
+					id="confirmPassword"
+					class="w-full border-2 border-[#D7D7D7] py-[15px] rounded-[8px]"
+				/>
+			</div>
+			<button
+				class="w-full mt-[2rem] bg-[#EE5684] py-[15px] text-[1rem] text-white rounded-[8px]"
+			>
+				SIGN UP
+			</button>
+			<div class="border mt-[2rem]"></div>
+			<p class="text-center mt-[1rem]">
+				already a user? <a href="login.html" class="text-[blue]">LOGIN</a>
+			</p>
+		</form>
+		<!--  -->
+	</body>
+</html>
