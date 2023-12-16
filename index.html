@@ -1,56 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Interact | Home</title>
-		<script src="https://cdn.tailwindcss.com"></script>
-		<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body class="bg-[#457B9D]">
-		<!-- header section -->
-		<header
-			id="top"
-			class="bg-[#1D3557] min-h-[80px] py-[1rem] flex items-center justify-center"
-		>
-			<h1 class="text-[1.5rem] text-white font-bold hover:text-[#EE5684]">
-				ChatSinc
-			</h1>
-		</header>
-		<main class="min-h-[80vh]">
-			<h1 class="text-center mt-[1rem] text-white">this is the homepage</h1>
-		</main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interact | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-[#457B9D]">
+    <!-- header section -->
+    <header
+      id="top"
+      class="bg-[#1D3557] min-h-[80px] py-[1rem] flex items-center justify-center"
+    >
+      <h1 class="text-[1.5rem] text-white font-bold hover:text-[#EE5684]">
+        ChatSinc
+      </h1>
+    </header>
+	
+    <main class="min-h-[80vh]">
+      <!-- Conversation starter input field -->
+      <div
+        class="container w-3/4 mx-auto bg-white pt-8 h-48 mt-8 rounded-lg parent-container"
+      >
+        <div
+          class="container px-[20px]  mx-auto  flex gap-x-8"
+        >
+          <!-- image/avatar -->
+          <div class="pt-3">
+            <img
+              src="https://cdn.pixabay.com/photo/2014/03/24/17/19/teacher-295387_640.png"
+              alt="avatar"
+              class="avatar w-[50px] h-[fit-content] max-w-md rounded-full"
+            />
+          </div>
+          <!-- text area/input field -->
+          <div class="w-full h-32 mx-auto">
+            <input
+              id="my-textarea"
+              name="message"
+              rows="4"
+              class=" pt-2 block h-32 w-full resize-none rounded-md border border-gray-300 focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+            ></input>
+          </div>
+          <!--send button  -->
+          <div class="pt-3">
+            <button
+              class="bg-[#1D3557] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded h-[45px]"
+            >
+              Send
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
 
-		<!-- footer section -->
-		<footer class="bg-[#1D3557] min-h-[80px] py-[1rem]">
-			<div>
-				<h2 class="text-[1.5rem] text-white text-center font-bold">
-					<a href="#top" class="hover:text-[#EE5684]">ChatSinc</a>
-				</h2>
-				<ul
-					class="min-h-[50px] text-white flex items-center justify-center gap-x-[1.5rem] w-[90%] max-w-[400px] mx-auto"
-				>
-					<li><a href="#top" class="hover:text-[#EE5684]">Home</a></li>
-					<li><a href="#" class="hover:text-[#EE5684]">About us</a></li>
-					<li><a href="#top" class="hover:text-[#EE5684]">Contact us</a></li>
-				</ul>
-				<p class="text-center text-white">
-					&copy; 2023 All rights reserved, Genie codes
-				</p>
-			</div>
-		</footer>
-	</body>
+    <!-- footer section -->
+    <footer class="bg-[#1D3557] min-h-[80px] py-[1rem]">
+      <div>
+        <h2 class="text-[1.5rem] text-white text-center font-bold">
+          <a href="#top" class="hover:text-[#EE5684]">ChatSinc</a>
+        </h2>
+        <ul
+          class="min-h-[50px] text-white flex items-center justify-center gap-x-[1.5rem] w-[90%] max-w-[400px] mx-auto"
+        >
+          <li><a href="#top" class="hover:text-[#EE5684]">Home</a></li>
+          <li><a href="#" class="hover:text-[#EE5684]">About us</a></li>
+          <li><a href="#top" class="hover:text-[#EE5684]">Contact us</a></li>
+        </ul>
+        <p class="text-center text-white">
+          &copy; 2023 All rights reserved, Genie codes
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
