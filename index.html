@@ -18,7 +18,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="tailwind.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body class="bg-[#457B9D]">
     <!-- header section -->
@@ -30,41 +33,68 @@
         ChatSinc
       </h1>
     </header>
-	
+
     <main class="min-h-[80vh]">
       <!-- Conversation starter input field -->
       <div
-        class="container w-3/4 mx-auto bg-white pt-8 h-48 mt-8 rounded-lg parent-container"
+        class="container w-[90%] max-w-[700px] mx-auto bg-white py-8 px-8 mt-8 rounded-lg parent-container"
       >
-        <div
-          class="container px-[20px]  mx-auto  flex gap-x-8"
-        >
+        <div class="container flex gap-x-[15px] xxs:flex-col gap-y-[15px]">
+          <!-- avatar & textarea -->
+          <!-- <div class="flex gap-x-8 w-full"> -->
           <!-- image/avatar -->
-          <div class="pt-3">
+          <!-- <div class="pt-3">
             <img
               src="https://cdn.pixabay.com/photo/2014/03/24/17/19/teacher-295387_640.png"
               alt="avatar"
               class="avatar w-[50px] h-[fit-content] max-w-md rounded-full"
             />
-          </div>
+          </div> -->
           <!-- text area/input field -->
-          <div class="w-full h-32 mx-auto">
+          <!-- <div class="w-full h-32 mx-auto">
             <input
               id="my-textarea"
               name="message"
               rows="4"
               class=" pt-2 block h-32 w-full resize-none rounded-md border border-gray-300 focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
             ></input>
-          </div>
+          </div> -->
+          <textarea
+            name="comment"
+            id="comment"
+            class="w-full xxs:w-full min-h-[100px] rounded-[6px]"
+          ></textarea>
+          <!-- </div> -->
           <!--send button  -->
-          <div class="pt-3">
+          <div class="xxs:w-full">
             <button
-              class="bg-[#1D3557] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded h-[45px]"
+              class="bg-[#1D3557] hover:bg-blue-700 text-white text-[0.9rem] font-semibold py-[5px] px-[10px] rounded-[6px] w-full"
             >
               Send
             </button>
           </div>
         </div>
+      </div>
+      <!-- comment display -->
+
+      <div
+        class="container w-[90%] max-w-[700px] mx-auto bg-white py-4 px-8 mt-8 rounded-lg parent-container"
+      >
+      
+      <div class="flex-col flex">
+        <!-- edit and delete -->
+        <div class="container flex justify-end gap-2">
+          <i class="fa-solid fa-pen-to-square" style="color: #1D3557;"></i>
+          <i class="fa-solid fa-trash" style="color:#1D3557;"></i>
+        </div>
+        <!-- comment text -->
+        <div
+          class="container py-4"
+        >
+        <p class="text-[#1D3557] font-semibold text-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi numquam, delectus, quas dolorum ex nobis nihil unde aperiam mollitia rem quod aspernatur voluptatibus ut dolores accusantium. Minus sint molestias blanditiis?</p>
+      </div>
+    </div>
+      
       </div>
     </main>
 

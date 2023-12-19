@@ -8,3 +8,10 @@
 	box-sizing: border-box;
 	font-family: 'Raleway', sans-serif;
 }
+/* styles.css */
+@media (min-width: theme('screens.xxs.max')) {
+	#comment {
+	  width: 100%;
+	}
+  }
+  
